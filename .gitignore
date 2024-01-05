@@ -7,3 +7,4 @@ site/resources/_gen/
 *.iso
 cloud-init/alis.key
 cloud-init/iso/
+.idea
