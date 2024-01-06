@@ -54,4 +54,6 @@ rclone copy -P --check-first --max-backlog 2000000 --order-by size,mixed,50 --tr
 
 rclone copy -P --check-first --max-backlog 2000000 --order-by size,mixed,50 --transfers 8 --checkers 48 /mnt/fourt/laptop.backup.1/home/devu/.ssh /home/devu/.ssh
 
+rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.config/background/ /home/devu/.config/background
+
 echo "chmod .ssh dir and files"
