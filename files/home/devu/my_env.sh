@@ -1,16 +1,21 @@
 #!/usr/bin/env bash
 
-# tee -a /etc/environment <<EOF
-# QT_QPA_PLATFORMTHEME=qt5ct
-# QT_STYLE_OVERRIDE=kvantum
-# BROWSER=firefox
-# EDITOR=nano
-# EOF
+ tee -a /etc/environment <<EOF
+ #QT_QPA_PLATFORMTHEME=qt5gtk2
+ QT_QPA_PLATFORMTHEME=qt5ct
+ QT_STYLE_OVERRIDE=kvantum
+ BROWSER=firefox
+ EDITOR=micro
+ EOF
 
 gpasswd -a devu video
 
 tee -a /etc/udev/rules.d/backlight.rules <<EOF
-ACTION=="add", SUBSYSTEM=="backlight", RUN+="/bin/chgrp video $sys$devpath/brightness", RUN+="/bin/chmod g+w $sys$devpath/brightness"
+#ACTION=="add", SUBSYSTEM=="backlight", RUN+="/bin/chgrp video /brightness", RUN+="/bin/chmod g+w /brightness"
+
+RUN+="/bin/chgrp -R video /sys/class/backlight/nvidia_0/"
+RUN+="/bin/chmod -R g+w /sys/class/backlight/nvidia_0/"
+#RUN+="/bin/chown 1000 /sys/class/backlight/nvidia_0/"
 EOF
 
 # chmod +x .config/polybar/i3_bar.sh
