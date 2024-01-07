@@ -8,6 +8,7 @@ application/xml=xed.desktop;
 application/arj=org.kde.ark.desktop;
 application/gzip=org.kde.ark.desktop;
 application/json=org.kde.kate.desktop;
+application/conf=org.kde.kate.desktop;
 application/octet-stream=kate.desktop;
 application/pdf=firefox.desktop;
 application/pgp-keys=org.gnome.seahorse.Application.desktop;

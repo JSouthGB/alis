@@ -91,3 +91,10 @@ chmod +x /home/devu/.config/polybar/material/launch.sh
 chmod +x /home/devu/.config/polybar/material/scripts/launcher.sh
 chmod +x /home/devu/.config/polybar/material/scripts/powermenu.sh
 chmod +x /home/devu/.config/polybar/material/scripts/updates.sh
+
+echo "## jetbrains toolbox ##"
+rclone copy /mnt/fourt/laptop.backup.1/jetbrains-toolbox.appimage /home/devu
+chmod +x /home/devu/jetbrains-toolbox-2.1.1.18388/
+
+echo "## chown $HOME to user"
+chown -R devu:devu /home/devu
