@@ -83,7 +83,7 @@ rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.config/background/ /home/de
 echo "rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.config/zsh/ /home/devu/.config/zsh"
 rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.config/zsh/ /home/devu/.config/zsh
 
-echo "rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.zshenv /home/devu/.zshenv"
+echo "rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.zshenv /home/devu/"
 rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.zshenv /home/devu/.zshenv
 
 echo "## chmod .ssh dir and files ##"
