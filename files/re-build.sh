@@ -56,6 +56,9 @@ rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/Desktop/ /home/devu/Desktop/
 echo "rclone copy -P --check-first --max-backlog 2000000 --order-by size,mixed,50 --transfers 8 --checkers 48 /mnt/fourt/laptop.backup.1/home/devu/Downloads /home/devu/Downloads"
 rclone copy -P --check-first --max-backlog 2000000 --order-by size,mixed,50 --transfers 8 --checkers 48 /mnt/fourt/laptop.backup.1/home/devu/Downloads /home/devu/Downloads
 
+echo "rclone copy -P --check-first --max-backlog 2000000 --order-by size,mixed,50 --transfers 8 --checkers 48 /mnt/fourt/laptop.backup.1/home/devu/.local/share/fonts /home/devu/.local/share/fonts"
+rclone copy -P --check-first --max-backlog 2000000 --order-by size,mixed,50 --transfers 8 --checkers 48 /mnt/fourt/laptop.backup.1/home/devu/.local/share/fonts /home/devu/.local/share/fonts
+
 echo "rclone copy -P --check-first --max-backlog 2000000 --order-by size,mixed,50 --transfers 8 --checkers 48 /mnt/fourt/laptop.backup.1/home/devu/Pictures /home/devu/Pictures"
 rclone copy -P --check-first --max-backlog 2000000 --order-by size,mixed,50 --transfers 8 --checkers 48 /mnt/fourt/laptop.backup.1/home/devu/Pictures /home/devu/Pictures
 
