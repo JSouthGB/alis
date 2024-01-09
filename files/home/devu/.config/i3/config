@@ -218,10 +218,10 @@ exec xrandr --output DP-0 --mode 2560x1440 --primary --rate 240 --dpi 96 --outpu
 #exec xset s off
 
 # network-manager applet
-exec nm-applet
+#exec nm-applet
 
 # compositor
-exec picom
+exec picom --daemon &
 
 # Notification Daemon
 exec dunst
