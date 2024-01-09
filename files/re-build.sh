@@ -44,11 +44,15 @@ mount -a
 echo "systemctl daemon-reload"
 systemctl daemon-reload
 
-echo "rclone copy -P /mnt/fourt/laptop.backup.1/sddm-theme-corners/corners/ /usr/share/sddm/themes/corners/"
-rclone copy -P /mnt/fourt/laptop.backup.1/sddm-theme-corners/corners/ /usr/share/sddm/themes
+#echo "rclone copy -P /mnt/fourt/laptop.backup.1/sddm-theme-corners/corners/ /usr/share/sddm/themes/corners/"
+#rclone copy -P /mnt/fourt/laptop.backup.1/sddm-theme-corners/corners/ /usr/share/sddm/themes
+
+#echo "## sddm ##"
+#sed -i 's/Numlock=none/Numlock=on/g' /usr/lib/sddm/sddm.conf.d/default.conf
+#sed -i 's/Current=/NCurrent=corners/g' /usr/lib/sddm/sddm.conf.d/default.conf
+
 echo "## sddm ##"
-sed -i 's/Numlock=none/Numlock=on/g' /usr/lib/sddm/sddm.conf.d/default.conf
-sed -i 's/Current=/NCurrent=corners/g' /usr/lib/sddm/sddm.conf.d/default.conf
+sed -i 's/#greeter-setup-script=/greeter-setup-script=/usr/bin/numlockx on/g' /etc/lightdm/lightdm.conf
 
 echo "rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/Desktop/ /home/devu/Desktop/"
 rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/Desktop/ /home/devu/Desktop/
@@ -101,8 +105,8 @@ chmod +x /home/devu/.config/polybar/material/scripts/powermenu.sh
 chmod +x /home/devu/.config/polybar/material/scripts/updates.sh
 
 echo "## jetbrains toolbox ##"
-rclone copy /mnt/fourt/laptop.backup.1/jetbrains-toolbox.appimage /home/devu
-chmod +x /home/devu/jetbrains-toolbox-2.1.1.18388/
+rclone copy /mnt/fourt/laptop.backup.1/jetbrains-toolbox /home/devu
+chmod +x /home/devu/jetbrains-toolbox/
 
 echo "## chown $HOME to user"
 chown -R devu:devu /home/devu

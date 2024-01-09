@@ -1601,7 +1601,7 @@ function desktop_environment_lxde() {
 }
 
 function desktop_environment_i3_wm() {
-    pacman_install "i3-wm i3lock xorg-server"
+    pacman_install "i3-wm i3lock xorg-server xorg-xinit"
 }
 
 function desktop_environment_i3_gaps() {
