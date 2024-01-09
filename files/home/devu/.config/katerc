@@ -1,11 +1,39 @@
 [General]
+Allow Tab Scrolling=true
+Auto Hide Tabs=false
+Close After Last=false
+Close documents with window=true
 Days Meta Infos=30
+Diff Show Style=0
+Elide Tab Text=false
+Expand Tabs=false
+Icon size for left and right sidebar buttons=32
+Modified Notification=false
+Mouse back button action=0
+Mouse forward button action=0
+Open New Tab To The Right Of Current=false
+Output History Limit=100
+Recent File List Entry Count=10
+Restore Window Configuration=true
+SDI Mode=false
 Save Meta Infos=true
 Show Full Path in Title=false
 Show Menu Bar=true
 Show Status Bar=true
+Show Symbol In Navigation Bar=true
 Show Tab Bar=true
+Show Tabs Close Button=true
 Show Url Nav Bar=true
+Show output view for message type=1
+Show text for left and right sidebar=false
+Show welcome view for new window=true
+Startup Session=manual
+Stash new unsaved files=true
+Stash unsaved file changes=false
+Sync section size with tab positions=false
+Tab Double Click New Document=true
+Tab Middle Click Close Document=true
+Tabbar Tab Limit=0
 
 [KTextEditor Document]
 Allow End of Line Detection=true
@@ -55,7 +83,7 @@ Fallback Encoding=ISO 8859-15
 Animate Bracket Matching=false
 Auto Color Theme Selection=true
 Color Theme=gruvbox Dark
-Font=Noto Sans,12,-1,5,50,0,0,0,0,0
+Font=JetBrains Mono,10,-1,5,50,0,0,0,0,0
 Line Height Multiplier=1
 Show Indentation Lines=false
 Show Whole Bracket Expression=false
@@ -125,9 +153,17 @@ Word Completion Remove Tail=true
 Replace History=\\0
 Search History=wm_theme,${c3},theme,disk,font,title,@,{cl2},${cl2},${cl2} ├─,users,num,backlight
 
+[Konsole]
+AutoSyncronize=true
+KonsoleEscKeyBehaviour=true
+KonsoleEscKeyExceptions=vi,vim,nvim,git
+RemoveExtension=false
+RunPrefix=
+SetEditor=false
+
 [MainWindow]
-2 screens: Height=2144
-2 screens: Width=947
+2 screens: Height=1372
+2 screens: Width=1262
 2560x1440 screen: Height=1378
 2560x1440 screen: Width=1267
 
@@ -143,3 +179,26 @@ showFullPathOnRoots=false
 showToolbar=true
 sortRole=0
 viewShade=211,190,222
+
+[lspclient]
+AllowedServerCommandLines=
+AutoHover=true
+AutoImport=true
+BlockedServerCommandLines=
+CompletionDocumentation=true
+CompletionParens=true
+Diagnostics=true
+FormatOnSave=false
+HighlightGoto=true
+IncrementalSync=false
+InlayHints=false
+Messages=true
+ReferencesDeclaration=true
+SemanticHighlighting=true
+ServerConfiguration=
+SignatureHelp=true
+SymbolDetails=false
+SymbolExpand=true
+SymbolSort=false
+SymbolTree=true
+TypeFormatting=false

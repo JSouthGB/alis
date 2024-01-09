@@ -211,8 +211,8 @@ exec --no-startup-id feh --bg-scale $HOME/.config/background/firewatch-dark-mini
 # autostart applications/services on login: #
 #############################################
 # xorg commands
-exec xrandr --output DP-0 --mode 2560x1440 --primary --rate 240 --dpi 96 --output DP-1 --off --output HDMI-0 --off
-#exec xrandr --output DP-0 --off --output DP-1 --primary --dpi 96 --mode 3840x2160 --rate 119.91 --left-of HDMI-0 --output HDMI-0 --dpi 96 --mode 2560x1440 --rate 120
+#exec xrandr --output DP-0 --mode 2560x1440 --primary --rate 240 --dpi 96 --output DP-1 --off --output HDMI-0 --off
+exec xrandr --output DP-0 --off --output DP-1 --primary --dpi 48 --mode 3840x2160 --rate 119.91 --left-of HDMI-0 --output HDMI-0 --dpi 48 --mode 2560x1440 --rate 120
 
 #exec xset s -dpms
 #exec xset s off

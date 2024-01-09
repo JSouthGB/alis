@@ -19,51 +19,51 @@ AlphaBackgroundColor=45,45,45
 AlphaBackgroundMode=AbstractImageView::AlphaBackgroundSolid
 MouseWheelBehavior=MouseWheelBehavior::Browse
 NavigationEndNotification=NavigationEndNotification::AlwaysWarn
-ThumbnailSplitterSizes=980,268
+ThumbnailSplitterSizes=1732,268
 
 [KPropertiesDialog]
 2 screens: Height=496
 2 screens: Width=796
 
 [MainWindow]
-2 screens: Height=1378
-2 screens: Width=1267
-2 screens: XPosition=3848
-2 screens: YPosition=54
-DP-1 HDMI-0=HDMI-0
-State=AAAA/wAAAAD9AAAAAAAABPMAAAUSAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+2 screens: Height=2130
+2 screens: Width=1896
+2 screens: XPosition=1929
+2 screens: YPosition=15
+DP-1 HDMI-0=DP-1
+State=AAAA/wAAAAD9AAAAAAAAB2gAAAgCAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 
 [MainWindow][Toolbar mainToolBar]
 ToolButtonStyle=IconOnly
 
 [Recent Files]
-File1[$e]=/mnt/fourt/_gallery-dl/directlink/__i60.fastpic.org__big_2015_0226_b1__48e29073d5c3577ea738477d2ffd7ab1.jpg
-File10[$e]=/mnt/fourt/_gallery-dl/directlink/__vq50.com__cdn_i_673c292ab87b0e52b01a290f1f125707__1.jpg
-File2[$e]=/mnt/fourt/_gallery-dl/directlink/__i179.photobucket.com__albums_w299_arjunas31__001.jpg
-File3[$e]=/mnt/fourt/_gallery-dl/directlink/__img36.pixhost.to__images_280__127220599_teen_photos0001-10042.jpg
-File4[$e]=/mnt/fourt/_gallery-dl/directlink/__randomarchive.com__data_b_thumb_1456_721__1456721451293s.jpg
-File5[$e]=/mnt/fourt/_gallery-dl/directlink/__realgirlsprime.com__wp-content_uploads_2014_06__girl-in-glasses-naked-selfie.jpg
-File6[$e]=/mnt/fourt/_gallery-dl/directlink/__thumbnails25.imagebam.com__7820__294a3d78197971.gif
-File7[$e]=/mnt/fourt/_gallery-dl/directlink/__unews.pro__uploads_012011__izbrannaya_erotika-480x639.jpg
-File8[$e]=/mnt/fourt/_gallery-dl/directlink/__vq50.com__cdn_i_673c292ab87b0e52b01a290f1f125707__10.jpg
-File9[$e]=/mnt/fourt/_gallery-dl/directlink/__voffka.com__archives__izbrannaya_erotika-480x639.jpg
-Name1[$e]=__i60.fastpic.org__big_2015_0226_b1__48e29073d5c3577ea738477d2ffd7ab1.jpg
-Name10[$e]=__vq50.com__cdn_i_673c292ab87b0e52b01a290f1f125707__1.jpg
-Name2[$e]=__i179.photobucket.com__albums_w299_arjunas31__001.jpg
-Name3[$e]=__img36.pixhost.to__images_280__127220599_teen_photos0001-10042.jpg
-Name4[$e]=__randomarchive.com__data_b_thumb_1456_721__1456721451293s.jpg
-Name5[$e]=__realgirlsprime.com__wp-content_uploads_2014_06__girl-in-glasses-naked-selfie.jpg
-Name6[$e]=__thumbnails25.imagebam.com__7820__294a3d78197971.gif
-Name7[$e]=__unews.pro__uploads_012011__izbrannaya_erotika-480x639.jpg
-Name8[$e]=__vq50.com__cdn_i_673c292ab87b0e52b01a290f1f125707__10.jpg
-Name9[$e]=__voffka.com__archives__izbrannaya_erotika-480x639.jpg
+File1[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0387_0006_93346917/1551AMP__6_.jpg
+File10[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0308_0009_81315486/1021AMP__9_.jpg
+File2[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0308_0009_81315486/1021AMP__1_.jpg
+File3[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0308_0009_81315486/1021AMP__2_.jpg
+File4[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0308_0009_81315486/1021AMP__3_.jpg
+File5[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0308_0009_81315486/1021AMP__4_.jpg
+File6[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0308_0009_81315486/1021AMP__5_.jpg
+File7[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0308_0009_81315486/1021AMP__6_.jpg
+File8[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0308_0009_81315486/1021AMP__7_.jpg
+File9[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0308_0009_81315486/1021AMP__8_.jpg
+Name1[$e]=1551AMP__6_.jpg
+Name10[$e]=1021AMP__9_.jpg
+Name2[$e]=1021AMP__1_.jpg
+Name3[$e]=1021AMP__2_.jpg
+Name4[$e]=1021AMP__3_.jpg
+Name5[$e]=1021AMP__4_.jpg
+Name6[$e]=1021AMP__5_.jpg
+Name7[$e]=1021AMP__6_.jpg
+Name8[$e]=1021AMP__7_.jpg
+Name9[$e]=1021AMP__8_.jpg
 
 [SideBar]
-InformationSplitterSizes=591,636
+InformationSplitterSizes=953,1026
 IsVisible ViewMode=true
 PreferredMetaInfoKeyList=General.Name,General.Size,General.Time,General.ImageSize
-SideBarSplitterSizes=248,1015
+SideBarSplitterSizes=248,1644
 
 [ThumbnailView]
 ThumbnailDetails=3
