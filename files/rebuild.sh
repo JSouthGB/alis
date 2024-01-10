@@ -80,6 +80,9 @@ rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.config/zsh/ /home/devu/.con
 echo "rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.zshenv /home/devu/"
 rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.zshenv /home/devu/
 
+echo "rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.zshenv /home/devu/"
+rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.config/alacritty/themes/ /home/devu/.config/alacritty/themes/
+
 echo "## chmod .ssh dir and files ##"
 chmod 700 /home/devu/.ssh/
 chmod 600 /home/devu/.ssh/id_ed25519
