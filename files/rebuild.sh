@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 echo "## environment ##"
+##for QT themes
 tee -a /etc/environment <<EOF
 #QT_QPA_PLATFORMTHEME=qt5gtk2
 QT_QPA_PLATFORMTHEME=qt5ct
@@ -9,18 +10,22 @@ BROWSER=firefox
 EDITOR=micro
 EOF
 
+##for backlight control
 gpasswd -a devu video
 
 echo "## backlight ##"
 tee -a /etc/udev/rules.d/backlight.rules <<EOF
+##ACTION stopped working
 #ACTION=="add", SUBSYSTEM=="backlight", RUN+="/bin/chgrp video /brightness", RUN+="/bin/chmod g+w /brightness"
 
+##chgrp/chmod works, chown seems excessive
 RUN+="/bin/chgrp -R video /sys/class/backlight/nvidia_0/"
 RUN+="/bin/chmod -R g+w /sys/class/backlight/nvidia_0/"
 #RUN+="/bin/chown 1000 /sys/class/backlight/nvidia_0/"
 EOF
 
 echo "## mkdir fourt and x13"
+## for mounts
 mkdir /mnt/fourt
 mkdir /mnt/x13
 
@@ -33,12 +38,15 @@ sed -i 's/#user_allow_other/user_allow_other/g' /etc/fuse.conf
 
 echo "## fstab ##"
 tee -a /etc/fstab <<EOF
+##secondary drive
 UUID=fa8d4ea2-fef8-474f-8c81-5fefc1cf34b0 /mnt/fourt xfs defaults,noatime 0 1
 
+##sshfs mount
 devu@10.0.0.6:/ /mnt/x13 fuse.sshfs noauto,x-systemd.automount,_netdev,IdentityFile=/home/devu/.ssh/id_rsa,allow_other,idmap=user,reconnect 0 0
 EOF
 
 echo "mount -a"
+## to copy files
 mount -a
 
 echo "## sddm ##"
@@ -80,7 +88,7 @@ rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.config/zsh/ /home/devu/.con
 echo "rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.zshenv /home/devu/"
 rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.zshenv /home/devu/
 
-echo "rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.zshenv /home/devu/"
+echo "rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.config/alacritty/themes/ /home/devu/.config/alacritty/themes/"
 rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.config/alacritty/themes/ /home/devu/.config/alacritty/themes/
 
 echo "## chmod .ssh dir and files ##"
@@ -102,4 +110,5 @@ rclone copy /mnt/fourt/laptop.backup.1/jetbrains-toolbox.appimage /home/devu
 chmod +x /home/devu/jetbrains-toolbox.appimage
 
 echo "## chown $HOME to user"
+## rclone doesn't preserve folder permissions
 chown -R devu:devu /home/devu
