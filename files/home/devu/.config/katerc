@@ -151,7 +151,7 @@ Word Completion Remove Tail=true
 
 [KTextEditor::Search]
 Replace History=\\0
-Search History=wm_theme,${c3},theme,disk,font,title,@,{cl2},${cl2},${cl2} ├─,users,num,backlight
+Search History=sys,date,mpd,MPD,wm_theme,${c3},theme,disk,font,title,@,{cl2},${cl2},${cl2} ├─,users,num,backlight
 
 [Konsole]
 AutoSyncronize=true
@@ -164,8 +164,8 @@ SetEditor=false
 [MainWindow]
 2 screens: Height=1372
 2 screens: Width=1262
-2560x1440 screen: Height=1378
-2560x1440 screen: Width=1267
+2560x1440 screen: Height=1388
+2560x1440 screen: Width=843
 
 [UiSettings]
 ColorScheme=KvMojave

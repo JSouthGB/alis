@@ -1,6 +1,7 @@
 [Added Associations]
 application/octet-stream=kate.desktop;
 application/x-shellscript=xed.desktop;
+application/x-trash=kate.desktop;
 application/x-zerosize=kate.desktop;
 application/xml=xed.desktop;
 text/plain=xed.desktop;
@@ -76,6 +77,7 @@ application/x-sv4cpio=org.kde.ark.desktop;
 application/x-sv4crc=org.kde.ark.desktop;
 application/x-tar=org.kde.ark.desktop;
 application/x-tarz=org.kde.ark.desktop;
+application/x-trash=kate.desktop;
 application/x-tzo=org.kde.ark.desktop;
 application/x-x509-ca-cert=gcr-viewer.desktop;org.gnome.seahorse.Application.desktop;
 application/x-x509-user-cert=gcr-viewer.desktop;org.gnome.seahorse.Application.desktop;

@@ -2,6 +2,11 @@
 2 screens: Width=1267
 2 screens: XPosition=3848
 2 screens: YPosition=54
+2560x1440 screen: Height=1378
+2560x1440 screen: Width=1267
+2560x1440 screen: XPosition=1285
+2560x1440 screen: YPosition=54
+DP-0=DP-0
 DP-1 HDMI-0=HDMI-0
 State=AAAA/wAAAAD9AAAAAAAABPMAAAUSAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 
@@ -19,54 +24,65 @@ AlphaBackgroundColor=45,45,45
 AlphaBackgroundMode=AbstractImageView::AlphaBackgroundSolid
 MouseWheelBehavior=MouseWheelBehavior::Browse
 NavigationEndNotification=NavigationEndNotification::AlwaysWarn
-ThumbnailSplitterSizes=1732,268
+ThumbnailSplitterSizes=1081,167
 
 [KPropertiesDialog]
 2 screens: Height=496
 2 screens: Width=796
+2560x1440 screen: Height=496
+2560x1440 screen: Width=796
 
 [MainWindow]
 2 screens: Height=2130
 2 screens: Width=1896
 2 screens: XPosition=1929
 2 screens: YPosition=15
+2560x1440 screen: Height=1378
+2560x1440 screen: Width=1267
+2560x1440 screen: XPosition=1285
+2560x1440 screen: YPosition=54
+DP-0=DP-0
 DP-1 HDMI-0=DP-1
-State=AAAA/wAAAAD9AAAAAAAAB2gAAAgCAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAABPMAAAUSAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 
 [MainWindow][Toolbar mainToolBar]
 ToolButtonStyle=IconOnly
 
 [Recent Files]
-File1[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0387_0006_93346917/1551AMP__6_.jpg
-File10[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0308_0009_81315486/1021AMP__9_.jpg
-File2[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0308_0009_81315486/1021AMP__1_.jpg
-File3[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0308_0009_81315486/1021AMP__2_.jpg
-File4[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0308_0009_81315486/1021AMP__3_.jpg
-File5[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0308_0009_81315486/1021AMP__4_.jpg
-File6[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0308_0009_81315486/1021AMP__5_.jpg
-File7[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0308_0009_81315486/1021AMP__6_.jpg
-File8[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0308_0009_81315486/1021AMP__7_.jpg
-File9[$e]=/mnt/fourt/_gallery-dl/vipergirls/4521577/0308_0009_81315486/1021AMP__8_.jpg
-Name1[$e]=1551AMP__6_.jpg
-Name10[$e]=1021AMP__9_.jpg
-Name2[$e]=1021AMP__1_.jpg
-Name3[$e]=1021AMP__2_.jpg
-Name4[$e]=1021AMP__3_.jpg
-Name5[$e]=1021AMP__4_.jpg
-Name6[$e]=1021AMP__5_.jpg
-Name7[$e]=1021AMP__6_.jpg
-Name8[$e]=1021AMP__7_.jpg
-Name9[$e]=1021AMP__8_.jpg
+File1[$e]=$HOME/Downloads/Photos-001/PXL_20220420_142229447.jpg
+File10[$e]=$HOME/Downloads/Photos-001/NS402-9.jpg
+File2[$e]=$HOME/Downloads/Photos-001/NS402-3.jpg
+File3[$e]=$HOME/Downloads/Photos-001/NS402-4.jpg
+File4[$e]=$HOME/Downloads/Photos-001/NS402-5.jpg
+File5[$e]=$HOME/Downloads/Photos-001/NS402-8.jpg
+File6[$e]=$HOME/Downloads/Photos-001/NS402-7.jpg
+File7[$e]=$HOME/Downloads/Photos-001/NS402-6.jpg
+File8[$e]=$HOME/Downloads/Photos-001/NS402-2.jpg
+File9[$e]=$HOME/Downloads/Photos-001/NS402-1.jpg
+Name1[$e]=PXL_20220420_142229447.jpg
+Name10[$e]=NS402-9.jpg
+Name2[$e]=NS402-3.jpg
+Name3[$e]=NS402-4.jpg
+Name4[$e]=NS402-5.jpg
+Name5[$e]=NS402-8.jpg
+Name6[$e]=NS402-7.jpg
+Name7[$e]=NS402-6.jpg
+Name8[$e]=NS402-2.jpg
+Name9[$e]=NS402-1.jpg
+
+[SemanticInfoDialog]
+2560x1440 screen: Height=496
+2560x1440 screen: Width=796
 
 [SideBar]
-InformationSplitterSizes=953,1026
+InformationSplitterSizes=591,636
 IsVisible ViewMode=true
-PreferredMetaInfoKeyList=General.Name,General.Size,General.Time,General.ImageSize
-SideBarSplitterSizes=248,1644
+PreferredMetaInfoKeyList=General.Name,General.Size,General.Time,General.ImageSize,Exif.Photo.DateTimeDigitized,Exif.Image.DateTime,Exif.Photo.DateTimeOriginal
+SideBarSplitterSizes=233,1030
 
 [ThumbnailView]
-ThumbnailDetails=3
+ThumbnailDetails=27
 
 [Toolbar mainToolBar]
 ToolButtonStyle=IconOnly
