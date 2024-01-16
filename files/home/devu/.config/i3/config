@@ -40,7 +40,7 @@ gaps inner 6
 gaps outer 0
 
 ##############################
-#     Floating Modifier      # 
+#     Floating Modifier      #
 ##############################
 floating_modifier $mod
 
@@ -146,9 +146,11 @@ bindsym $mod+Ctrl+l resize shrink width 5 px or 5 ppt
 for_window [floating] resize set 800 500, move position center
 
 # set floating (nontiling) for apps needing it
-for_window [class="Yad" instance="yad"] floating disable
+#for_window [class="Yad" instance="yad"] floating disable
 for_window [class="Nitrogen"] floating enable
+for_window [class="Seahorse"] instance="seahorse"] floating enable
 for_window [class="Galculator" instance="galculator"] floating enable
+for_window [class="mpv"] floating enable
 
 # set floating (nontiling) for special apps
 for_window [class="GLava" instance="GLava"] floating enable
@@ -165,7 +167,7 @@ bindsym $mod+w exec librewolf
 # File Manager
 bindsym $mod+n exec dolphin
 
-# PDF Reader Zathura 
+# PDF Reader Zathura
 #bindsym $mod+Shift+o exec zathura
 
 # Screenshot : FlameShot
@@ -196,7 +198,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Shift+e exec $HOME/.config/polybar/material/scripts/powermenu.sh &
 
 # Lock the system
-bindsym $mod+Shift+x exec i3lock -i /usr/share/backgrounds/firewatch-dark-minimal-dark-minimal-5k-58.jpg
+bindsym $mod+Shift+x exec i3lock -i $HOME/.config/background/firewatch-dark-minimal-5k-58.png
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -211,8 +213,8 @@ exec --no-startup-id feh --bg-scale $HOME/.config/background/firewatch-dark-mini
 # autostart applications/services on login: #
 #############################################
 # xorg commands
-exec xrandr --output DP-0 --mode 2560x1440 --primary --rate 240 --output DP-1 --off --output HDMI-0 --off
-#exec xrandr --output DP-0 --off --output DP-1 --primary --mode 3840x2160 --rate 119.91 --left-of HDMI-0 --output HDMI-0 --mode 2560x1440 --rate 120
+#exec xrandr --output DP-0 --mode 2560x1440 --primary --rate 240 --output DP-1 --off --output HDMI-0 --off
+#exec xrandr --output DP-0 --off --output DP-1 --primary --mode 3840x2160 --rate 119.91 --gamma 0.9:0.9:0.9 --left-of HDMI-0 --output HDMI-0 --mode 2560x1440 --rate 120
 
 #exec xset s -dpms
 #exec xset s off

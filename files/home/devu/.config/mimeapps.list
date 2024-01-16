@@ -5,6 +5,7 @@ application/x-trash=kate.desktop;
 application/x-zerosize=kate.desktop;
 application/xml=xed.desktop;
 text/plain=xed.desktop;
+video/mp4=mpv.desktop;
 
 [Default Applications]
 application/arj=org.kde.ark.desktop;
@@ -162,6 +163,7 @@ text/x-sql=org.kde.kate.desktop;micro.desktop;
 text/x-tcl=org.kde.kate.desktop;nvim.desktop;
 text/x-tex=org.kde.kate.desktop;nvim.desktop;
 text/xml=org.kde.kate.desktop;
+video/mp4=mpv.desktop;
 x-scheme-handler/geo=google-maps-geo-handler.desktop;openstreetmap-geo-handler.desktop;qwant-maps-geo-handler.desktop;wheelmap-geo-handler.desktop;
 x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;

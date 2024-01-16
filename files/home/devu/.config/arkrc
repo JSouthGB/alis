@@ -1,39 +1,6 @@
 [General]
-Allow Tab Scrolling=true
-Auto Hide Tabs=false
-Close After Last=false
-Close documents with window=true
-Days Meta Infos=30
-Diff Show Style=0
-Elide Tab Text=false
-Expand Tabs=false
-Icon size for left and right sidebar buttons=32
-Modified Notification=false
-Mouse back button action=0
-Mouse forward button action=0
-Open New Tab To The Right Of Current=false
-Output History Limit=100
-Recent File List Entry Count=10
-Restore Window Configuration=true
-SDI Mode=false
-Save Meta Infos=true
-Show Full Path in Title=false
-Show Menu Bar=true
-Show Status Bar=true
-Show Symbol In Navigation Bar=true
-Show Tab Bar=true
-Show Tabs Close Button=true
-Show Url Nav Bar=true
-Show output view for message type=1
-Show text for left and right sidebar=false
-Show welcome view for new window=true
-Startup Session=manual
-Stash new unsaved files=true
-Stash unsaved file changes=false
-Sync section size with tab positions=false
-Tab Double Click New Document=true
-Tab Middle Click Close Document=true
-Tabbar Tab Limit=0
+LockSidebar=true
+ShowSidebar=true
 
 [KTextEditor Document]
 Allow End of Line Detection=true
@@ -82,8 +49,8 @@ Fallback Encoding=ISO 8859-15
 [KTextEditor Renderer]
 Animate Bracket Matching=false
 Auto Color Theme Selection=true
-Color Theme=gruvbox Dark
-Font=JetBrains Mono,10,-1,5,50,0,0,0,0,0
+Color Theme=Breeze Dark
+Font=JetBrainsMono Nerd Font,11,-1,5,50,0,0,0,0,0
 Line Height Multiplier=1
 Show Indentation Lines=false
 Show Whole Bracket Expression=false
@@ -149,56 +116,26 @@ Word Completion=true
 Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
-[KTextEditor::Search]
-Replace History=\\0
-Search History=
-
-[Konsole]
-AutoSyncronize=true
-KonsoleEscKeyBehaviour=true
-KonsoleEscKeyExceptions=vi,vim,nvim,git
-RemoveExtension=false
-RunPrefix=
-SetEditor=false
-
 [MainWindow]
-2 screens: Height=2144
-2 screens: Width=1267
+2 screens: Height=2098
+2 screens: Width=1270
+2 screens: XPosition=1285
+2 screens: YPosition=54
 2560x1440 screen: Height=1388
-2560x1440 screen: Width=627
+2560x1440 screen: Width=499
+2560x1440 screen: XPosition=2053
+2560x1440 screen: YPosition=44
+DP-0=DP-0
+DP-1 HDMI-0=DP-1
+State=AAAA/wAAAAD9AAAAAQAAAAEAAADVAAAFOPwCAAAAAfsAAAAWAGEAcgBrAF8AcwBpAGQAZQBiAGEAcgAAAAA0AAAFOAAAAHgA///+AAAE9gAAB/4AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+StatusBar=Disabled
+ToolBarsMovable=Disabled
 
-[UiSettings]
-ColorScheme=KvMojave
-
-[filetree]
-editShade=183,220,246
-listMode=false
-shadingEnabled=true
-showCloseButton=false
-showFullPathOnRoots=false
-showToolbar=true
-sortRole=0
-viewShade=211,190,222
-
-[lspclient]
-AllowedServerCommandLines=
-AutoHover=true
-AutoImport=true
-BlockedServerCommandLines=
-CompletionDocumentation=true
-CompletionParens=true
-Diagnostics=true
-FormatOnSave=false
-HighlightGoto=true
-IncrementalSync=false
-InlayHints=false
-Messages=true
-ReferencesDeclaration=true
-SemanticHighlighting=true
-ServerConfiguration=
-SignatureHelp=true
-SymbolDetails=false
-SymbolExpand=true
-SymbolSort=false
-SymbolTree=true
-TypeFormatting=false
+[Viewer]
+2560x1440 screen: Height=1388
+2560x1440 screen: Width=499
+2560x1440 screen: XPosition=2053
+2560x1440 screen: YPosition=44
+DP-0=DP-0
+State=AAAA/wAAAAD9AAAAAAAAAfMAAAUUAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled

@@ -49,9 +49,6 @@ echo "mount -a"
 ## to copy files
 mount -a
 
-echo "## sddm ##"
-sed -i 's/#greeter-setup-script=/greeter-setup-script=/usr\/bin\/numlockx on/g' /etc/lightdm/lightdm.conf
-
 echo "rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/Desktop/ /home/devu/Desktop/"
 rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/Desktop/ /home/devu/Desktop/
 
@@ -85,11 +82,11 @@ rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.config/background/ /home/de
 echo "rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.config/zsh/ /home/devu/.config/zsh"
 rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.config/zsh/ /home/devu/.config/zsh
 
-echo "rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.zshenv /home/devu/"
-rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.zshenv /home/devu/
-
 echo "rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.config/alacritty/themes/ /home/devu/.config/alacritty/themes/"
 rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.config/alacritty/themes/ /home/devu/.config/alacritty/themes/
+
+echo "rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.local/share/nvim/ /home/devu/.local/share/nvim/"
+rclone copy -P rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.local/share/nvim/ /home/devu/.local/share/nvim/
 
 echo "## chmod .ssh dir and files ##"
 chmod 700 /home/devu/.ssh/
@@ -108,6 +105,10 @@ chmod +x /home/devu/.config/polybar/material/scripts/updates.sh
 echo "## jetbrains toolbox ##"
 rclone copy /mnt/fourt/laptop.backup.1/jetbrains-toolbox.appimage /home/devu
 chmod +x /home/devu/jetbrains-toolbox.appimage
+
+
+echo "## export GPG_TTY=$(tty)"
+export GPG_TTY=$(tty)
 
 echo "## chown $HOME to user"
 ## rclone doesn't preserve folder permissions

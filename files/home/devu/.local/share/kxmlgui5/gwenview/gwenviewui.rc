@@ -1,7 +1,7 @@
 <!DOCTYPE gui>
-<gui name="gwenview" translationDomain="kxmlgui5" version="68">
+<gui version="68" translationDomain="kxmlgui5" name="gwenview">
  <MenuBar alreadyVisited="1">
-  <Menu alreadyVisited="1" name="file" noMerge="1">
+  <Menu noMerge="1" alreadyVisited="1" name="file">
    <text translationDomain="kxmlgui5">&amp;File</text>
    <Action name="file_open"/>
    <Action name="file_open_recent"/>
@@ -27,7 +27,7 @@
    <Separator weakSeparator="1"/>
    <Action name="file_quit"/>
   </Menu>
-  <Menu alreadyVisited="1" name="edit" noMerge="1">
+  <Menu noMerge="1" alreadyVisited="1" name="edit">
    <text translationDomain="kxmlgui5">&amp;Edit</text>
    <Action name="edit_undo"/>
    <Action name="edit_redo"/>
@@ -44,7 +44,7 @@
    <Action name="edit_paste"/>
    <Separator/>
    <Action name="edit_tags"/>
-   <Menu name="rating" noMerge="1">
+   <Menu noMerge="1" name="rating">
     <text translationDomain="gwenview">&amp;Rating</text>
     <Action name="rate_0"/>
     <Action name="rate_1"/>
@@ -65,7 +65,7 @@
    <Action name="red_eye_reduction"/>
    <Action name="annotate"/>
   </Menu>
-  <Menu alreadyVisited="1" name="view" noMerge="1">
+  <Menu noMerge="1" alreadyVisited="1" name="view">
    <text translationDomain="kxmlgui5">&amp;View</text>
    <Action name="view_actual_size"/>
    <Separator weakSeparator="1"/>
@@ -97,7 +97,7 @@
    <Separator weakSeparator="1"/>
    <Action name="fullscreen"/>
   </Menu>
-  <Menu alreadyVisited="1" name="go" noMerge="1">
+  <Menu noMerge="1" alreadyVisited="1" name="go">
    <text translationDomain="kxmlgui5">&amp;Go</text>
    <Action name="go_up"/>
    <Separator weakSeparator="1"/>
@@ -119,7 +119,8 @@
   <Separator weakSeparator="1"/>
   <Separator weakSeparator="1"/>
   <Separator weakSeparator="1"/>
-  <Menu alreadyVisited="1" name="settings" noMerge="1">
+  <Separator weakSeparator="1"/>
+  <Menu noMerge="1" alreadyVisited="1" name="settings">
    <text translationDomain="kxmlgui5">&amp;Settings</text>
    <Action name="options_show_menubar"/>
    <Merge name="StandardToolBarMenuHandler"/>
@@ -132,7 +133,7 @@
    <Action name="options_configure"/>
   </Menu>
   <Separator weakSeparator="1"/>
-  <Menu alreadyVisited="1" name="help" noMerge="1">
+  <Menu noMerge="1" alreadyVisited="1" name="help">
    <text translationDomain="kxmlgui5">&amp;Help</text>
    <Action name="help_contents"/>
    <Action name="help_whats_this"/>
@@ -146,7 +147,7 @@
    <Action name="help_about_kde"/>
   </Menu>
  </MenuBar>
- <ToolBar alreadyVisited="1" name="mainToolBar" noMerge="1">
+ <ToolBar noMerge="1" alreadyVisited="1" name="mainToolBar">
   <text translationDomain="gwenview">Main Toolbar</text>
   <Action name="go_start_page"/>
   <Separator name="separator_0"/>
@@ -159,8 +160,9 @@
   <Spacer name="spacer_0"/>
   <Action name="fullscreen"/>
   <Action name="hamburger_menu"/>
+  <Action name="toggle_operations_sidebar"/>
  </ToolBar>
  <ActionProperties scheme="Default">
-  <Action name="fullscreen" priority="0"/>
+  <Action priority="0" name="fullscreen"/>
  </ActionProperties>
 </gui>
