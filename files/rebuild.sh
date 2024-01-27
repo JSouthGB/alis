@@ -85,8 +85,12 @@ rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.config/zsh/ /home/devu/.con
 echo "rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.config/alacritty/themes/ /home/devu/.config/alacritty/themes/"
 rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.config/alacritty/themes/ /home/devu/.config/alacritty/themes/
 
-echo "rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.local/share/nvim/ /home/devu/.local/share/nvim/"
-rclone copy -P rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.local/share/nvim/ /home/devu/.local/share/nvim/
+# echo "rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.local/share/nvim/ /home/devu/.local/share/nvim/"
+# rclone copy -P rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.local/share/nvim/ /home/devu/.local/share/nvim/
+
+rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.local/share/user-places.xbel /home/devu/.local/share/
+rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.local/share/user-places.xbel.bak /home/devu/.local/share/
+rclone copy -P /mnt/fourt/laptop.backup.1/home/devu/.local/share/user-places.xbel.tbcache /home/devu/.local/share/
 
 echo "## chmod .ssh dir and files ##"
 chmod 700 /home/devu/.ssh/
