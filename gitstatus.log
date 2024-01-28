@@ -1,0 +1,889 @@
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	deleted:    files/etc/X11/xorg.conf.d/99-killX.conf
+	deleted:    files/etc/X11/xorg.conf.d/99-killX.conf.bak
+	new file:   files/etc/X11/xorg.conf.d/dpms.conf
+	deleted:    files/etc/pacman.d/hooks/nvidia.hook
+	new file:   files/home/devu/.config/background/1342862.png
+	new file:   files/home/devu/.config/background/3184122.png
+	new file:   files/home/devu/.config/background/3184126.png
+	new file:   files/home/devu/.config/background/firewatch-dark-minimal-5k-58.png
+	new file:   files/home/devu/.config/background/illustration-city-anime-painting-wallpaper-13f4d2d68139f5ef0b47c1ea2a545254.png
+	new file:   files/home/devu/.config/background/sebastian-luca-highresscreenshot00000.png
+	new file:   files/home/devu/.config/background/wp4281957-industrial-wallpapers.png
+	new file:   files/home/devu/.config/btop/btop.conf
+	new file:   files/home/devu/.config/geeqie/accels
+	new file:   files/home/devu/.config/geeqie/geeqierc.xml
+	new file:   files/home/devu/.config/geeqie/history
+	new file:   files/home/devu/.config/geeqie/keywords
+	new file:   files/home/devu/.config/geeqie/marks
+	modified:   files/home/devu/.config/i3/config
+	new file:   files/home/devu/.config/kdeglobals
+	new file:   files/home/devu/.config/kgpgrc
+	modified:   files/home/devu/.config/micro/buffers/history
+	deleted:    files/home/devu/.config/nvim
+	modified:   files/home/devu/.config/polybar/blocks/colors.ini
+	modified:   files/home/devu/.config/polybar/blocks/config.ini
+	modified:   files/home/devu/.config/polybar/blocks/modules.ini
+	modified:   files/home/devu/.config/polybar/blocks/preview.sh
+	new file:   files/home/devu/.config/polybar/blocks/scripts/polybar-kdeconnect.sh
+	modified:   files/home/devu/.config/polybar/blocks/scripts/rofi/colors.rasi
+	modified:   files/home/devu/.config/polybar/blocks/user_modules.ini
+	modified:   files/home/devu/.config/polybar/colorblocks/launch.sh
+	modified:   files/home/devu/.config/polybar/colorblocks/preview.sh
+	modified:   files/home/devu/.config/polybar/colorblocks/scripts/checkupdates
+	modified:   files/home/devu/.config/polybar/colorblocks/scripts/color-switch.sh
+	modified:   files/home/devu/.config/polybar/colorblocks/scripts/colors-dark.sh
+	modified:   files/home/devu/.config/polybar/colorblocks/scripts/colors-light.sh
+	modified:   files/home/devu/.config/polybar/colorblocks/scripts/launcher.sh
+	modified:   files/home/devu/.config/polybar/colorblocks/scripts/powermenu.sh
+	modified:   files/home/devu/.config/polybar/colorblocks/scripts/pywal.sh
+	modified:   files/home/devu/.config/polybar/colorblocks/scripts/random.sh
+	modified:   files/home/devu/.config/polybar/colorblocks/scripts/updates.sh
+	modified:   files/home/devu/.config/polybar/cuts/launch.sh
+	modified:   files/home/devu/.config/polybar/cuts/preview.sh
+	modified:   files/home/devu/.config/polybar/cuts/scripts/checkupdates
+	modified:   files/home/devu/.config/polybar/cuts/scripts/color-switch.sh
+	modified:   files/home/devu/.config/polybar/cuts/scripts/colors-dark.sh
+	modified:   files/home/devu/.config/polybar/cuts/scripts/colors-light.sh
+	modified:   files/home/devu/.config/polybar/cuts/scripts/launcher.sh
+	modified:   files/home/devu/.config/polybar/cuts/scripts/powermenu.sh
+	modified:   files/home/devu/.config/polybar/cuts/scripts/pywal.sh
+	modified:   files/home/devu/.config/polybar/cuts/scripts/random.sh
+	modified:   files/home/devu/.config/polybar/cuts/scripts/style-switch.sh
+	modified:   files/home/devu/.config/polybar/cuts/scripts/styles.sh
+	modified:   files/home/devu/.config/polybar/cuts/scripts/updates.sh
+	modified:   files/home/devu/.config/polybar/docky/launch.sh
+	modified:   files/home/devu/.config/polybar/docky/preview.sh
+	modified:   files/home/devu/.config/polybar/docky/scripts/checkupdates
+	modified:   files/home/devu/.config/polybar/docky/scripts/color-switch.sh
+	modified:   files/home/devu/.config/polybar/docky/scripts/colors-dark.sh
+	modified:   files/home/devu/.config/polybar/docky/scripts/colors-light.sh
+	modified:   files/home/devu/.config/polybar/docky/scripts/launcher.sh
+	modified:   files/home/devu/.config/polybar/docky/scripts/powermenu.sh
+	modified:   files/home/devu/.config/polybar/docky/scripts/pywal.sh
+	modified:   files/home/devu/.config/polybar/docky/scripts/random.sh
+	modified:   files/home/devu/.config/polybar/docky/scripts/updates.sh
+	modified:   files/home/devu/.config/polybar/forest/launch.sh
+	modified:   files/home/devu/.config/polybar/forest/preview.sh
+	modified:   files/home/devu/.config/polybar/forest/scripts/checkupdates
+	modified:   files/home/devu/.config/polybar/forest/scripts/launcher.sh
+	modified:   files/home/devu/.config/polybar/forest/scripts/powermenu.sh
+	modified:   files/home/devu/.config/polybar/forest/scripts/style-switch.sh
+	modified:   files/home/devu/.config/polybar/forest/scripts/styles.sh
+	modified:   files/home/devu/.config/polybar/forest/scripts/updates.sh
+	modified:   files/home/devu/.config/polybar/grayblocks/launch.sh
+	modified:   files/home/devu/.config/polybar/grayblocks/preview.sh
+	modified:   files/home/devu/.config/polybar/grayblocks/scripts/checkupdates
+	modified:   files/home/devu/.config/polybar/grayblocks/scripts/color-switch.sh
+	modified:   files/home/devu/.config/polybar/grayblocks/scripts/colors-dark.sh
+	modified:   files/home/devu/.config/polybar/grayblocks/scripts/colors-light.sh
+	modified:   files/home/devu/.config/polybar/grayblocks/scripts/launcher.sh
+	modified:   files/home/devu/.config/polybar/grayblocks/scripts/powermenu.sh
+	modified:   files/home/devu/.config/polybar/grayblocks/scripts/pywal.sh
+	modified:   files/home/devu/.config/polybar/grayblocks/scripts/random.sh
+	modified:   files/home/devu/.config/polybar/grayblocks/scripts/updates.sh
+	modified:   files/home/devu/.config/polybar/hack/launch.sh
+	modified:   files/home/devu/.config/polybar/hack/preview.sh
+	modified:   files/home/devu/.config/polybar/hack/scripts/check-network
+	modified:   files/home/devu/.config/polybar/hack/scripts/checkupdates
+	modified:   files/home/devu/.config/polybar/hack/scripts/color-switch.sh
+	modified:   files/home/devu/.config/polybar/hack/scripts/colors-dark.sh
+	modified:   files/home/devu/.config/polybar/hack/scripts/colors-light.sh
+	modified:   files/home/devu/.config/polybar/hack/scripts/launcher.sh
+	modified:   files/home/devu/.config/polybar/hack/scripts/powermenu.sh
+	modified:   files/home/devu/.config/polybar/hack/scripts/pywal.sh
+	modified:   files/home/devu/.config/polybar/hack/scripts/random.sh
+	modified:   files/home/devu/.config/polybar/hack/scripts/updates.sh
+	modified:   files/home/devu/.config/polybar/launch.sh
+	modified:   files/home/devu/.config/polybar/material/launch.sh
+	modified:   files/home/devu/.config/polybar/material/modules.ini
+	modified:   files/home/devu/.config/polybar/material/preview.sh
+	modified:   files/home/devu/.config/polybar/material/scripts/checkupdates
+	modified:   files/home/devu/.config/polybar/material/scripts/color-switch.sh
+	modified:   files/home/devu/.config/polybar/material/scripts/colors-dark.sh
+	modified:   files/home/devu/.config/polybar/material/scripts/colors-light.sh
+	modified:   files/home/devu/.config/polybar/material/scripts/launcher.sh
+	modified:   files/home/devu/.config/polybar/material/scripts/powermenu.sh
+	modified:   files/home/devu/.config/polybar/material/scripts/pywal.sh
+	modified:   files/home/devu/.config/polybar/material/scripts/random.sh
+	modified:   files/home/devu/.config/polybar/material/scripts/updates.sh
+	modified:   files/home/devu/.config/polybar/material/user_modules.ini
+	modified:   files/home/devu/.config/polybar/panels/launch.sh
+	modified:   files/home/devu/.config/polybar/panels/scripts/launcher.sh
+	modified:   files/home/devu/.config/polybar/panels/scripts/powermenu.sh
+	modified:   files/home/devu/.config/polybar/panels/scripts/style-switch.sh
+	modified:   files/home/devu/.config/polybar/panels/scripts/styles.sh
+	new file:   files/home/devu/.config/polybar/panels/wallpapers/budgie.jpg
+	new file:   files/home/devu/.config/polybar/panels/wallpapers/deepin.jpg
+	new file:   files/home/devu/.config/polybar/panels/wallpapers/elementary.jpg
+	new file:   files/home/devu/.config/polybar/panels/wallpapers/elementary_2.jpg
+	new file:   files/home/devu/.config/polybar/panels/wallpapers/gnome.jpg
+	new file:   files/home/devu/.config/polybar/panels/wallpapers/kde.jpg
+	new file:   files/home/devu/.config/polybar/panels/wallpapers/kde_2.jpg
+	new file:   files/home/devu/.config/polybar/panels/wallpapers/liri.png
+	new file:   files/home/devu/.config/polybar/panels/wallpapers/mint.jpg
+	new file:   files/home/devu/.config/polybar/panels/wallpapers/ubuntu.jpg
+	new file:   files/home/devu/.config/polybar/panels/wallpapers/xubuntu.png
+	new file:   files/home/devu/.config/polybar/panels/wallpapers/zorin.png
+	modified:   files/home/devu/.config/polybar/pwidgets/launch.sh
+	modified:   files/home/devu/.config/polybar/pwidgets/scripts/launcher.sh
+	modified:   files/home/devu/.config/polybar/pwidgets/scripts/powermenu.sh
+	modified:   files/home/devu/.config/polybar/pwidgets/scripts/pywal.sh
+	modified:   files/home/devu/.config/polybar/pwidgets/scripts/random.sh
+	modified:   files/home/devu/.config/polybar/pwidgets/scripts/style-switch.sh
+	modified:   files/home/devu/.config/polybar/pwidgets/scripts/styles.sh
+	modified:   files/home/devu/.config/polybar/shades/launch.sh
+	modified:   files/home/devu/.config/polybar/shades/preview.sh
+	modified:   files/home/devu/.config/polybar/shades/scripts/checkupdates
+	modified:   files/home/devu/.config/polybar/shades/scripts/color-switch.sh
+	modified:   files/home/devu/.config/polybar/shades/scripts/colors-dark.sh
+	modified:   files/home/devu/.config/polybar/shades/scripts/colors-light.sh
+	modified:   files/home/devu/.config/polybar/shades/scripts/launcher.sh
+	modified:   files/home/devu/.config/polybar/shades/scripts/powermenu.sh
+	modified:   files/home/devu/.config/polybar/shades/scripts/pywal.sh
+	modified:   files/home/devu/.config/polybar/shades/scripts/random.sh
+	modified:   files/home/devu/.config/polybar/shades/scripts/updates.sh
+	modified:   files/home/devu/.config/polybar/shapes/launch.sh
+	modified:   files/home/devu/.config/polybar/shapes/preview.sh
+	modified:   files/home/devu/.config/polybar/shapes/scripts/checkupdates
+	modified:   files/home/devu/.config/polybar/shapes/scripts/color-switch.sh
+	modified:   files/home/devu/.config/polybar/shapes/scripts/colors-dark.sh
+	modified:   files/home/devu/.config/polybar/shapes/scripts/colors-light.sh
+	modified:   files/home/devu/.config/polybar/shapes/scripts/launcher.sh
+	modified:   files/home/devu/.config/polybar/shapes/scripts/powermenu.sh
+	modified:   files/home/devu/.config/polybar/shapes/scripts/pywal.sh
+	modified:   files/home/devu/.config/polybar/shapes/scripts/random.sh
+	modified:   files/home/devu/.config/polybar/shapes/scripts/style-switch.sh
+	modified:   files/home/devu/.config/polybar/shapes/scripts/updates.sh
+	new file:   files/home/devu/.config/rclone/rclone.conf
+	new file:   files/home/devu/.config/zsh/.Xmodmap
+	new file:   files/home/devu/.config/zsh/.p10k.zsh
+	new file:   files/home/devu/.config/zsh/.zsh_aliases
+	new file:   files/home/devu/.config/zsh/.zsh_bindkeys
+	new file:   files/home/devu/.config/zsh/.zsh_functions
+	new file:   files/home/devu/.config/zsh/.zsh_history
+	new file:   files/home/devu/.config/zsh/.zsh_plugins
+	new file:   files/home/devu/.config/zsh/.zshrc
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/.fast-make-targets
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/.fast-read-ini-file
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/.fast-run-command
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/.fast-run-git-command
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/.fast-zts-read-all
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/.gitignore
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/.zunit.yml
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/CHANGELOG.md
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/CHROMA_GUIDE.adoc
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/LICENSE
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/README.md
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/THEME_GUIDE.md
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/_fast-theme
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/fast-highlight
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/fast-string-highlight
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/fast-theme
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/share/free_theme.zsh
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/test/parse.zsh
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/test/to-parse.zsh
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/tests/_output/.gitkeep
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/tests/_support/.gitkeep
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/tests/_support/bootstrap
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/tests/example.zunit
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/tests/main.zunit
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/themes/base16.ini
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/themes/clean.ini
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/themes/default.ini
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/themes/forest.ini
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/themes/free.ini
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/themes/q-jmnemonic.ini
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/themes/safari.ini
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/themes/spa.ini
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/themes/sv-orple.ini
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/themes/sv-plant.ini
+	new file:   files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/themes/zdharma.ini
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-alias.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-autoload.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-autorandr.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-awk.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-docker.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-example.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-fast-theme.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-fpath_peq.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-git.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-grep.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-hub.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-ionice.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-lab.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-make.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-nice.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-nmcli.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-node.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-ogit.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-perl.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-precommand.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-printf.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-ruby.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-scp.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-sh.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-source.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-ssh.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-subcommand.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-subversion.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-vim.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-whatis.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-which.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/-zinit.ch"
+	new file:   "files/home/devu/.config/zsh/plugins/fast-syntax-highlighting/\342\206\222chroma/main-chroma.ch"
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/.gitignore
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Completions/_autocomplete__ancestor_dirs
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Completions/_autocomplete__command
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Completions/_autocomplete__compadd_opts_len
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Completions/_autocomplete__history_lines
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Completions/_autocomplete__is_glob
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Completions/_autocomplete__recent_paths
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Completions/_autocomplete__should_insert_unambiguous
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Completions/_autocomplete__unambiguous
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Functions/Init/.autocomplete:__main__
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Functions/Init/.autocomplete:async
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Functions/Init/.autocomplete:compinit
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Functions/Init/.autocomplete:config
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Functions/Init/.autocomplete:key-bindings
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Functions/Init/.autocomplete:recent-dirs
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Functions/Init/.autocomplete:widgets
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Functions/Util/.autocomplete:patch
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Functions/Util/.autocomplete:zle-flags
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Functions/Widgets/.autocomplete:complete-word:completion-widget
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Functions/Widgets/.autocomplete:complete-word:post
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Functions/Widgets/.autocomplete:down-line-or-select:zle-widget
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Functions/Widgets/.autocomplete:history-search:completion-widget
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Functions/Widgets/.autocomplete:up-line-or-search:zle-widget
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/LICENSE
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/README.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Tests/__init__.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/Tests/complete-word.post.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/run-tests.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/.circleci/config.yml
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/.editorconfig
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/.rspec
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/.rubocop.yml
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/.ruby-version
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/CHANGELOG.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/DESCRIPTION
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/Dockerfile
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/Gemfile
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/Gemfile.lock
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/INSTALL.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/LICENSE
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/Makefile
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/README.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/URL
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/VERSION
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/ZSH_VERSIONS
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/install_test_zsh.sh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/.editorconfig
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/.gitattributes
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/.gitignore
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/.revision-hash
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/.version
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/COPYING.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/HACKING.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/INSTALL.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/Makefile
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/README.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/changelog.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/docs/highlighters.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/docs/highlighters/brackets.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/docs/highlighters/cursor.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/docs/highlighters/line.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/docs/highlighters/main.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/docs/highlighters/pattern.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/docs/highlighters/regexp.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/docs/highlighters/root.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/README.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/brackets/README.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/brackets/brackets-highlighter.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/brackets/test-data/cursor-matchingbracket-line-finish.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/brackets/test-data/cursor-matchingbracket.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/brackets/test-data/empty-styles.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/brackets/test-data/loop-styles.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/brackets/test-data/mismatch-patentheses.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/brackets/test-data/near-quotes.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/brackets/test-data/nested-parentheses.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/brackets/test-data/only-error.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/brackets/test-data/quoted-patentheses.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/brackets/test-data/simple-parentheses.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/brackets/test-data/unclosed-patentheses.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/brackets/test-data/unclosed-patentheses2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/cursor/README.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/cursor/cursor-highlighter.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/line/README.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/line/line-highlighter.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/README.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/abspath-in-command-position1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/abspath-in-command-position1b.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/abspath-in-command-position2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/abspath-in-command-position3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/abspath-in-command-position3b.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/abspath-in-command-position4.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/abspath-in-command-position5.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-assignment1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-basic.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-brackets.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-command-substitution.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-comment1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-comment2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-complex.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-empty.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-eponymous1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-eponymous2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-in-cmdsubst.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-loop.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-loop2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-nested-precommand.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-nested.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-parameter.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-precommand-option-argument1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-precommand-option-argument2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-precommand-option-argument3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-precommand-option-argument4.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-quoted.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-redirect.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-reuse1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-reuse2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-reuse3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-reuse4.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-reuse5.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-self.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-self2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-to-dir.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-to-dir1b.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-unknown-token1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-unknown-token2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/always1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/always2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/always3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/anonymous-function.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/arg0-colon.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/arith-cmdsubst-mess.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/arith1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/arith2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/arithmetic-command-substitution.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/arithmetic-doubled-parens.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/arithmetic-empty.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/arithmetic-evaluation.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/arithmetic-hist-expn.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/arithmetic-invalid-chars.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/arithmetic-multiplication.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/arithmetic-nested.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/arithmetic-quoted.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/arithmetic-unclosed.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/arithmetic-unfinished.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/array-cmdsep1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/array-cmdsep2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/array-cmdsep3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assign-append.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assign-argv.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assign-array.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assign-array2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assign-array3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assign-invalid-command.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assign-not-array.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assign-not-array2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assign-quoted-cmdsubst.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assign-semicolon.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assign-subshell.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assign-value-quote1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assign-value-quote2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assign.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assignment-before-resword1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assignment-before-resword2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assignment-before-resword3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assignment-before-resword4.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assignment-before-resword5.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/assignment-quoted.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/back-quoted-argument.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/back-quoted-open.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/backslash-continuation.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/backslash-continuation2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/backslash-space.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/backslash.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/bang-assign-array.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/bang-assign-scalar.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/bang-pipeline.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/block-assignment-no-command.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/braces1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/braces2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/brackets-matching1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/brackets-matching2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/brackets-mismatch1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/brackets-mismatch10-if-negative.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/brackets-mismatch2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/brackets-mismatch3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/brackets-mismatch4.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/brackets-mismatch5.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/brackets-mismatch6.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/brackets-mismatch7.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/brackets-mismatch8-if-positive.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/brackets-mismatch8.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/brackets-mismatch9-if-positive.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/brackets-premature-termination.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/cdpath-abspath.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/cmdpos-elision-partial.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/command-substitution-adjacent.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/command-substitution-in-assignment.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/command-substitution-unclosed.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/commandseparator.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/comment-followed.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/comment-leading.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/comment-off.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/comments.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/commmand-parameter.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/control-flow.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/control-flow2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/control-flow3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/cthulhu.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/dinbrack1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/dirs_blacklist.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/dollar-dollar.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/dollar-noise.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/dollar-paren.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/dollar-quoted.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/dollar-quoted2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/dollar-quoted3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/double-hyphen-option.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/double-quoted.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/double-quoted2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/double-quoted3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/double-quoted4.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/empty-command-newline.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/empty-command.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/empty-command2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/empty-line.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/equals1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/equals2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/equals3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/equals4.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/escaped-single-quote.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/exec-redirection1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/fd-target-not-filename.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/function-altsyntax.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/function-named1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/function-named2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/function.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/glob.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/global-alias1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/globs-with-quoting.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/hashed-command.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/history-double-quoted-escaped.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/history-double-quoted-followed.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/history-double-quoted-no.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/history-double-quoted-unescaped.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/history-double-quoted-yes.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/history-expansion.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/history-expansion2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/inheritance.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/jobsubst-isnt-glob.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/jobsubst-isnt-glob2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/loop-newline.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/meta-no-eval1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/meta-no-eval2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/multiline-array-assignment1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/multiline-string.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/multiline-string2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/multios-negates-globbing.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/multios-negates-globbing2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/multiple-quotes.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/multiple-redirections.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/noglob-alias.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/noglob-always.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/noglob1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/noglob2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/noglob3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/noglob4.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/null-exec.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/null-exec2-printenv.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/number_range-glob.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/off-by-one.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/opt-shwordsplit1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/optimized-cmdsubst-input.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/option-dollar-quote-isnt-filename.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/option-path_dirs.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/option-with-quotes.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/order-path-after-dollar.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/order-path-before-globbing.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/param-positional-in-array-append.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/param-precommand-option-argument1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/param-precommand-option-argument3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/parameter-elision-command-word.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/parameter-expansion-shwordsplit.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/parameter-expansion-untokenized1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/parameter-expansion-untokenized2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/parameter-star.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/parameter-to-global-alias.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/parameter-value-contains-command-position1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/parameter-value-contains-command-position2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/pasted-quotes.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/path-broken-symlink.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/path-dollared-word.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/path-dollared-word2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/path-dollared-word3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/path-dollared-word3b.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/path-dollared-word4.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/path-mixed-quoting.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/path-separators.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/path-separators2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/path-space.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/path-tilde-home.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/path-tilde-home2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/path-tilde-home3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/path-tilde-named.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/path.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/path_prefix.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/path_prefix2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/path_prefix3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/plain-file-in-command-position.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/precommand-killing1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/precommand-killing2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/precommand-then-assignment.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/precommand-type1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/precommand-type2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/precommand-type3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/precommand-uninstalled.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/precommand-unknown-option.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/precommand.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/precommand2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/precommand3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/precommand4.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/prefix-redirection.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/process-substitution-after-redirection.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/process-substitution-redirection-isnt-globbing.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/process-substitution.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/process-substitution2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/quoted-command-substitution-empty.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/quoted-redirection-in-command-word.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/rc-quotes.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/redirection-comment.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/redirection-from-param.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/redirection-in-cmdsubst.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/redirection-inhibits-elision.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/redirection-is-not-option.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/redirection-special-cases.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/redirection.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/redirection2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/redirection3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/reserved-word.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/simple-command.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/simple-redirection.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/subshell.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/sudo-command.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/sudo-comment.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/sudo-longopt.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/sudo-redirection.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/sudo-redirection2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/sudo-redirection3.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/tilde-command-word.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/time-and-nocorrect1.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/time-and-nocorrect2.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/unbackslash.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/unknown-command.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/vanilla-newline.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/main/test-data/vi-linewise-mode.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/pattern/README.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/pattern/pattern-highlighter.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/pattern/test-data/rm-rf.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/regexp/README.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/regexp/regexp-highlighter.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/regexp/test-data/complex.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/regexp/test-data/subexpression.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/regexp/test-data/word-boundary.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/root/README.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/highlighters/root/root-highlighter.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/release.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/tests/README.md
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/tests/edit-failed-tests
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/tests/generate.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/tests/tap-colorizer.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/tests/tap-filter
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/tests/test-highlighting.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/tests/test-perfs.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/tests/test-zprof.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
+	new file:   files/home/devu/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+	new file:   files/home/devu/.config/zsh/themes/agnoster-zsh-theme/agnoster.zsh-theme
+	new file:   files/home/devu/.config/zsh/themes/agnoster-zsh-theme/agnoster.zsh-theme.bak
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/Makefile
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/config/p10k-classic.zsh
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/config/p10k-lean-8colors.zsh
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/config/p10k-lean.zsh
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/config/p10k-pure.zsh
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/config/p10k-rainbow.zsh
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/config/p10k-robbyrussell.zsh
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/font.md
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/.clang-format
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/.gitattributes
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/.gitignore
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/.vscode/c_cpp_properties.json
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/.vscode/settings.json
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/LICENSE
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/Makefile
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/README.md
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/build
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/build.info
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/deps/.gitkeep
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/docs/listdir.md
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/gitstatus.plugin.sh
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/gitstatus.plugin.zsh
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/gitstatus.prompt.sh
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/gitstatus.prompt.zsh
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/install
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/install.info
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/mbuild
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/algorithm.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/arena.cc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/arena.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/bits.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/check.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/check_dir_mtime.cc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/check_dir_mtime.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/dir.cc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/dir.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/git.cc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/git.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/gitstatus.cc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/index.cc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/index.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/logging.cc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/logging.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/options.cc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/options.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/print.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/repo.cc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/repo.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/repo_cache.cc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/repo_cache.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/request.cc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/request.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/response.cc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/response.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/scope_guard.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/serialization.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/stat.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/string_cmp.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/string_view.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/strings.cc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/strings.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/tag_db.cc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/tag_db.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/thread_pool.cc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/thread_pool.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/time.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/timer.cc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/timer.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/src/tribool.h
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/gitstatus/usrbin/.gitkeep
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/internal/configure.zsh
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/internal/configure.zsh.zwc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/internal/icons.zsh
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/internal/icons.zsh.zwc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/internal/notes.md
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/internal/p10k.zsh
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/internal/p10k.zsh.zwc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/internal/parser.zsh
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/internal/parser.zsh.zwc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/internal/wizard.zsh
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/internal/worker.zsh
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/internal/worker.zsh.zwc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/powerlevel10k.png
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/powerlevel10k.zsh-theme
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/powerlevel10k.zsh-theme.zwc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/powerlevel9k.zsh-theme
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/powerlevel9k.zsh-theme.zwc
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/prompt_powerlevel10k_setup
+	new file:   files/home/devu/.config/zsh/themes/powerlevel10k/prompt_powerlevel9k_setup
+	new file:   files/home/devu/.gitconfig
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/LICENSE.txt
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/README.md
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFont-Black.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFont-BlackItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFont-Bold.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFont-BoldItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFont-ExtraLight.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFont-ExtraLightItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFont-Italic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFont-Light.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFont-LightItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFont-Medium.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFont-MediumItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFont-Regular.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFont-SemiBold.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFont-SemiBoldItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontMono-Black.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontMono-BlackItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontMono-Bold.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontMono-BoldItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontMono-ExtraLight.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontMono-ExtraLightItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontMono-Italic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontMono-Light.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontMono-LightItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontMono-Medium.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontMono-MediumItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontMono-Regular.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontMono-SemiBold.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontMono-SemiBoldItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontPropo-Black.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontPropo-BlackItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontPropo-Bold.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontPropo-BoldItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontPropo-ExtraLight.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontPropo-ExtraLightItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontPropo-Italic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontPropo-Light.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontPropo-LightItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontPropo-Medium.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontPropo-MediumItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontPropo-Regular.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontPropo-SemiBold.ttf
+	new file:   files/home/devu/.local/share/fonts/SauceCodeProNerdFont/SauceCodeProNerdFontPropo-SemiBoldItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/fantasque_sans_mono.ttf
+	new file:   files/home/devu/.local/share/fonts/feather.ttf
+	new file:   files/home/devu/.local/share/fonts/iosevka_nerd_font.ttf
+	new file:   files/home/devu/.local/share/fonts/material_design_iconic_font.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/bitmap-fonts/scientifica-doubled/bold/ScientificaBold-22.otb
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/bitmap-fonts/scientifica-doubled/italic/ScientificaItalic-22.otb
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/bitmap-fonts/scientifica-doubled/regular/ScientificaRegular-22.otb
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/bitmap-fonts/scientifica/bold/ScientificaBold.otb
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/bitmap-fonts/scientifica/italic/ScientificaItalic.otb
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/bitmap-fonts/scientifica/regular/ScientificaRegular.otb
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/icon-fonts/Icomoon-Feather.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/icon-fonts/MaterialIconsOutlined-Regular.otf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/icon-fonts/MaterialIconsRound-Regular.otf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/icon-fonts/MaterialIconsTwoTone-Regular.otf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/icon-fonts/Siji.bdf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/icon-fonts/Waffle.bdf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/icon-fonts/archcraft.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/icon-fonts/google-mdi.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/icon-fonts/typicons.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/nerd-fonts/Bitstream Vera Sans Mono Nerd Font Complete.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/nerd-fonts/Blex Mono Nerd Font Complete.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/nerd-fonts/Fantasque Sans Mono Regular Nerd Font Complete.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/nerd-fonts/Fira Code Regular Nerd Font Complete.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/nerd-fonts/Hack Regular Nerd Font Complete.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/nerd-fonts/Iosevka Nerd Font Complete.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/nerd-fonts/Iosevka Term Nerd Font Complete.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/nerd-fonts/JetBrains Mono Regular Nerd Font Complete.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/Comfortaa/Comfortaa-Bold.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/Comfortaa/Comfortaa-Light.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/Comfortaa/Comfortaa-Regular.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IBM-Plex-Mono/IBMPlexMono-Bold.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IBM-Plex-Mono/IBMPlexMono-BoldItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IBM-Plex-Mono/IBMPlexMono-ExtraLight.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IBM-Plex-Mono/IBMPlexMono-ExtraLightItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IBM-Plex-Mono/IBMPlexMono-Italic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IBM-Plex-Mono/IBMPlexMono-Light.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IBM-Plex-Mono/IBMPlexMono-LightItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IBM-Plex-Mono/IBMPlexMono-Medium.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IBM-Plex-Mono/IBMPlexMono-MediumItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IBM-Plex-Mono/IBMPlexMono-Regular.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IBM-Plex-Mono/IBMPlexMono-SemiBold.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IBM-Plex-Mono/IBMPlexMono-SemiBoldItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IBM-Plex-Mono/IBMPlexMono-Thin.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IBM-Plex-Mono/IBMPlexMono-ThinItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/Iosevka/iosevka-bold.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/Iosevka/iosevka-heavy.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/Iosevka/iosevka-italic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/Iosevka/iosevka-light.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/Iosevka/iosevka-medium.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/Iosevka/iosevka-oblique.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/Iosevka/iosevka-regular.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IosevkaCustom/Iosevka-bold.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IosevkaCustom/Iosevka-bolditalic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IosevkaCustom/Iosevka-boldoblique.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IosevkaCustom/Iosevka-italic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IosevkaCustom/Iosevka-oblique.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/IosevkaCustom/Iosevka-regular.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMono-Bold.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMono-BoldItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMono-ExtraBold.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMono-ExtraBoldItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMono-ExtraLight.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMono-ExtraLightItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMono-Italic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMono-Light.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMono-LightItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMono-Medium.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMono-MediumItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMono-Regular.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMono-Thin.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMono-ThinItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMonoNL-Bold.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMonoNL-BoldItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMonoNL-ExtraBold.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMonoNL-ExtraBoldItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMonoNL-ExtraLight.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMonoNL-ExtraLightItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMonoNL-Italic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMonoNL-Light.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMonoNL-LightItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMonoNL-Medium.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMonoNL-MediumItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMonoNL-Regular.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMonoNL-Thin.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/JetBrainsMono/JetBrainsMonoNL-ThinItalic.ttf
+	new file:   files/home/devu/.local/share/fonts/mmsaeed509.baspwm-dots/normal-fonts/Typewriter.ttf
+	new file:   files/home/devu/.local/share/fonts/panels/droid_sans.ttf
+	new file:   files/home/devu/.local/share/fonts/panels/icomoon_feather.ttf
+	new file:   files/home/devu/.local/share/fonts/panels/material.ttf
+	new file:   files/home/devu/.local/share/fonts/panels/noto_sans.ttf
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u12b.otb
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u12n.otb
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u14b.otb
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u14n.otb
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u14v.otb
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u16b.otb
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u16n.otb
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u16v.otb
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u18b.otb
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u18n.otb
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u20b.otb
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u20n.otb
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u22b.otb
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u22n.otb
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u24b.otb
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u24n.otb
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u28b.otb
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u28n.otb
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u32b.otb
+	new file:   files/home/devu/.local/share/fonts/terminus/ter-u32n.otb
+	new file:   files/home/devu/.local/share/fonts/waffle.bdf
+	new file:   files/home/devu/.local/share/kate/anonymous.katesession
+	new file:   files/home/devu/.local/share/kwalletd/kdewallet.kwl
+	new file:   files/home/devu/.local/share/user-places.xbel
+	new file:   files/home/devu/.local/share/user-places.xbel.bak
+	new file:   files/home/devu/.local/share/user-places.xbel.tbcache
+	new file:   files/home/devu/.ssh/Text File.txt
+	new file:   files/home/devu/.ssh/config
+	new file:   files/home/devu/.ssh/id_ed25519
+	new file:   files/home/devu/.ssh/id_ed25519.pub
+	new file:   files/home/devu/.ssh/id_rsa
+	new file:   files/home/devu/.ssh/id_rsa.1
+	new file:   files/home/devu/.ssh/id_rsa.1.pub
+	new file:   files/home/devu/.ssh/id_rsa.2
+	new file:   files/home/devu/.ssh/id_rsa.2.pub
+	new file:   files/home/devu/.ssh/id_rsa.3
+	new file:   files/home/devu/.ssh/id_rsa.3.pub
+	new file:   files/home/devu/.ssh/id_rsa.pub
+	new file:   files/home/devu/.ssh/known_hosts
+	new file:   files/home/devu/.ssh/known_hosts.old
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	files/copy_config.sh
+	gitstatus.log
+

@@ -1,0 +1,10 @@
+#alias ls='ls -AlFh --color=auto'
+alias df='df -hTx overlay'
+alias lzd='lazydocker'
+alias gld='gallery-dl'
+alias lgld='python -m gallery_dl'
+alias nmcliu='nmcli connection up wg'
+alias nmclid='nmcli connection down wg'
+
+alias ls="exa -1lFamogh --time-style '+%y-%m-%d %H:%M:%S' --group-directories-first --icons always --hyperlink"
+alias cat='bat'
