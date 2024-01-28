@@ -1,5 +1,0 @@
-source $HOME/.config/zsh/themes/powerlevel10k/powerlevel10k.zsh-theme
-# source $HOME/.config/zsh/themes/agnoster-zsh-theme/agnoster.zsh-theme
-source $HOME/.config/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-source $HOME/.config/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-source $HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
