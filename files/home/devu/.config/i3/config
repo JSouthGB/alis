@@ -40,7 +40,7 @@ gaps inner 6
 gaps outer 0
 
 ##############################
-#     Floating Modifier      #
+#     Floating Modifier      # 
 ##############################
 floating_modifier $mod
 
@@ -142,18 +142,13 @@ bindsym $mod+Ctrl+l resize shrink width 5 px or 5 ppt
 # floating rules #
 ##################
 
-# Default floting window size
-for_window [floating] resize set 800 500, move position center
+#for_window [class="CLASS-NAME-HERE"] floating enable, border toggle, resize set 500px 500px, move position 50px 50px
 
-# set floating (nontiling) for apps needing it
-#for_window [class="Yad" instance="yad"] floating disable
-for_window [class="Nitrogen"] floating enable
-for_window [class="Seahorse"] instance="seahorse"] floating enable
-for_window [class="Galculator" instance="galculator"] floating enable
-for_window [class="mpv"] floating enable
-
-# set floating (nontiling) for special apps
-for_window [class="GLava" instance="GLava"] floating enable
+# define
+for_window [class="Seahorse"] floating enable, resize set 850px 650px
+for_window [class="kgpg"] floating enable, resize set 1035px 625px
+for_window [class="Galculator"] floating enable, resize set 386px 450px
+for_window [class="mpv"] floating enable, resize set 1920px 1080px
 
 ####################################################
 # keybindings for different shortcuts and actions: #
@@ -167,7 +162,7 @@ bindsym $mod+w exec librewolf
 # File Manager
 bindsym $mod+n exec dolphin
 
-# PDF Reader Zathura
+# PDF Reader Zathura 
 #bindsym $mod+Shift+o exec zathura
 
 # Screenshot : FlameShot
@@ -185,8 +180,9 @@ bindsym Mod1+Shift+n exec --no-startup-id nm-applet
 
 # Rofi
 #bindsym $mod+d exec --no-startup-id rofi -show drun -disable-history -show-icons
-bindsym $mod+d exec $HOME/.config/polybar/material/scripts/launcher.sh &
-bindsym Mod1+d exec --no-startup-id rofi -show run -disable-history
+bindsym $mod+d exec $HOME/.config/polybar/blocks/scripts/launcher.sh &
+#bindsym Mod1+d exec --no-startup-id rofi -show run -disable-history
+bindsym Mod1+d exec --no-startup-id rofi -show run
 bindsym Mod1+w exec rofi -show window -show-icons
 bindsym Mod1+m exec rofi -modi emoji -show emoji
 
@@ -195,10 +191,11 @@ bindsym $mod+Shift+q kill
 
 # exit-menu
 #bindsym $mod+Shift+e exec $HOME/.config/i3/scripts/power.sh
-bindsym $mod+Shift+e exec $HOME/.config/polybar/material/scripts/powermenu.sh &
+bindsym $mod+Shift+e exec $HOME/.config/polybar/blocks/scripts/powermenu.sh &
 
 # Lock the system
-bindsym $mod+Shift+x exec i3lock -i $HOME/.config/background/firewatch-dark-minimal-5k-58.png
+#bindsym $mod+Shift+x exec i3lock -i $HOME/.config/background/firewatch-dark-minimal-5k-58.png -c 000000
+bindsym $mod+Shift+x exec i3lock -i $HOME/.config/background/illustration-city-anime-painting-wallpaper-13f4d2d68139f5ef0b47c1ea2a545254.png -c 000000
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -207,7 +204,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # Background
-exec --no-startup-id feh --bg-scale $HOME/.config/background/firewatch-dark-minimal-5k-58.jpg
+#exec --no-startup-id feh --bg-scale $HOME/.config/background/firewatch-dark-minimal-5k-58.jpg
+exec --no-startup-id feh --bg-fill $HOME/.config/background/illustration-city-anime-painting-wallpaper-13f4d2d68139f5ef0b47c1ea2a545254.png
 
 #############################################
 # autostart applications/services on login: #
@@ -223,14 +221,13 @@ exec --no-startup-id feh --bg-scale $HOME/.config/background/firewatch-dark-mini
 #exec nm-applet
 
 # compositor
-exec picom --daemon &
+#exec picom --daemon &
 
 # Notification Daemon
 exec dunst
 
 # Polybar
-#exec_always --no-startup-id $HOME/.config/polybar/i3_bar.sh
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh --material
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh --blocks
 
 # background
 #exec feh --bg-scale --recursive --randomize ~/Pictures/backgrounds/*
@@ -265,13 +262,14 @@ set $grey  #a7adba
 set $light #eff1f5
 set $blue  #89DDFF
 set $warn  #d08770
+set $yellow #fdd835
 # }}}
 
 
 # window theme {{{
 #                       border background text   indicator
-client.focused          $blue  $blue      $blue  $blue
-client.focused_inactive $dark  $dark      $dark  $blue
-client.unfocused        $dark  $dark      $dark  $blue
+client.focused          $yellow  $yellow      $yellow  $yellow
+client.focused_inactive $dark  $dark      $dark  $yellow
+client.unfocused        $dark  $dark      $dark  $yellow
 client.urgent           $warn  $warn      $warn  $warn
 # }}}

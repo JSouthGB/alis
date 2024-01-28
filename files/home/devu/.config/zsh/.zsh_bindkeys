@@ -1,0 +1,63 @@
+# # ctrl+backspace
+# bindkey "^H" delete-previous-word
+#
+# # ctrl+del
+# bindkey "^[[3;5~" delete-next-word
+#
+# # ctrl+left
+# bindkey "^[[1;5D" previous-word
+#
+# # ctrl+right
+# bindkey "^[[1;5C" next-word
+#
+# # home
+# bindkey "^[[H" beginning-of-line
+#
+# # end
+# bindkey "^[[F" end-of-line
+#
+# # delete
+# bindkey "^[[3~" delete-char
+#
+# # backspace
+# bindkey "^?" backward-delete-char
+
+bindkey '^?'      backward-delete-char          # bs         delete one char backward
+bindkey '^[[3~'   delete-char                   # delete     delete one char forward
+bindkey '^[[H'    beginning-of-line             # home       go to the beginning of line
+bindkey '^[[F'    end-of-line                   # end        go to the end of line
+bindkey '^[[1;5C' forward-word                  # ctrl+right go forward one word
+bindkey '^[[1;5D' backward-word                 # ctrl+left  go backward one word
+bindkey '^H'      backward-kill-word            # ctrl+bs    delete previous word
+bindkey '^[[3;5~' kill-word                     # ctrl+del   delete next word
+bindkey '^J'      backward-kill-line            # ctrl+j     delete everything before cursor
+bindkey '^[[D'    backward-char                 # left       move cursor one char backward
+bindkey '^[[C'    forward-char                  # right      move cursor one char forward
+
+###
+
+# Alt+Backspace
+backward-kill-dir () {
+    local WORDCHARS=${WORDCHARS/\/}
+    zle backward-kill-word
+    zle -f kill  # Ensures that after repeated backward-kill-dir, Ctrl+Y will restore all of them.
+}
+zle -N backward-kill-dir
+bindkey '^H' backward-kill-dir
+
+
+# Alt+Left
+backward-word-dir () {
+    local WORDCHARS=${WORDCHARS/\/}
+    zle backward-word
+}
+zle -N backward-word-dir
+bindkey "^[[1;5D" backward-word-dir
+
+# Alt+Right
+forward-word-dir () {
+    local WORDCHARS=${WORDCHARS/\/}
+    zle forward-word
+}
+zle -N forward-word-dir
+bindkey "^[[1;5C" forward-word-dir
