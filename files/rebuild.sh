@@ -101,10 +101,14 @@ chmod 600 /home/devu/.ssh/id_rsa.2
 chmod 600 /home/devu/.ssh/id_rsa.3
 
 echo "## chmod polybar scripts"
-chmod +x /home/devu/.config/polybar/material/launch.sh
-chmod +x /home/devu/.config/polybar/material/scripts/launcher.sh
-chmod +x /home/devu/.config/polybar/material/scripts/powermenu.sh
-chmod +x /home/devu/.config/polybar/material/scripts/updates.sh
+chmod +x /home/devu/.config/polybar/blocks/launch.sh
+chmod +x /home/devu/.config/polybar/blocks/scripts/launcher.sh
+chmod +x /home/devu/.config/polybar/blocks/scripts/powermenu.sh
+chmod +x /home/devu/.config/polybar/blocks/scripts/updates.sh
+
+echo "## chmod gnupg dir and files"
+find ~/.gnupg -type f -exec chmod 600 {} \;
+find ~/.gnupg -type d -exec chmod 700 {} \;
 
 echo "## jetbrains toolbox ##"
 rclone copy /mnt/fourt/laptop.backup.1/jetbrains-toolbox.appimage /home/devu
