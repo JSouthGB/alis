@@ -1585,9 +1585,9 @@ function desktop_environment_kde() {
 }
 
 function desktop_environment_xfce() {
-    pacman_install "xfce4 xfce4-goodies xorg-server pavucontrol pulseaudio"
+    pacman_install "xfce4 i3-wm i3lock xorg-xinit xorg-server pavucontrol pulseaudio"
 }
-
+#xfce4-goodies
 function desktop_environment_mate() {
     pacman_install "mate mate-extra xorg-server"
 }
