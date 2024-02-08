@@ -6,7 +6,7 @@
 # SC2153: Possible Misspelling: MYVARIABLE may not be assigned. Did you mean MY_VARIABLE?
 # SC2181: Check exit code directly with e.g. if mycmd;, not indirectly with $?.
 
-set -eu
+set -us
 
 # Arch Linux Install Script (alis) installs unattended, automated
 # and customized Arch Linux system.
