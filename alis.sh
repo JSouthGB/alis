@@ -6,7 +6,7 @@
 # SC2153: Possible Misspelling: MYVARIABLE may not be assigned. Did you mean MY_VARIABLE?
 # SC2181: Check exit code directly with e.g. if mycmd;, not indirectly with $?.
 
-set -eu
+set -us
 
 # Arch Linux Install Script (alis) installs unattended, automated
 # and customized Arch Linux system.
@@ -1584,8 +1584,12 @@ function desktop_environment_kde() {
     pacman_install "plasma-meta plasma-wayland-session kde-system-meta kde-utilities-meta kde-graphics-meta kde-multimedia-meta kde-network-meta"
 }
 
+# function desktop_environment_xfce() {
+#     pacman_install "xfce4 xfce4-goodies xorg-server pavucontrol pulseaudio"
+# }
+
 function desktop_environment_xfce() {
-    pacman_install "xfce4 xfce4-goodies xorg-server pavucontrol pulseaudio"
+    pacman_install "garcon thunar thunar-volman tumbler xfce4-appfinder xfce4-panel xfce4-power-manager xfce4-session xfce4-settings xfce4-terminal xfconf xfdesktop i3-wm i3lock xorg-xinit xorg-server pavucontrol pulseaudio"
 }
 
 function desktop_environment_mate() {
