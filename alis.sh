@@ -6,7 +6,7 @@
 # SC2153: Possible Misspelling: MYVARIABLE may not be assigned. Did you mean MY_VARIABLE?
 # SC2181: Check exit code directly with e.g. if mycmd;, not indirectly with $?.
 
-set -us
+set -eu
 
 # Arch Linux Install Script (alis) installs unattended, automated
 # and customized Arch Linux system.
@@ -1644,67 +1644,67 @@ function desktop_environment_dusk() {
     aur_install "dusk-git dmenu xterm xorg-server"
 }
 
-#function display_manager() {
-#    print_step "display_manager()"
-#
-#    if [ "$DISPLAY_MANAGER" == "auto" ]; then
-#        case "$DESKTOP_ENVIRONMENT" in
-#            "gnome" | "budgie" )
-#                display_manager_gdm
-#                ;;
-#            "kde" )
-#                display_manager_sddm
-#                ;;
-#            "lxde" )
-#                display_manager_lxdm
-#                ;;
-#            "xfce" | "mate" | "cinnamon" | "i3-wm" | "i3-gaps" | "deepin" | "bspwm" | "awesome" | "qtile" | "openbox" | "leftwm" | "dusk" )
-#                display_manager_lightdm
-#                ;;
-#        esac
-#    else
-#        case "$DISPLAY_MANAGER" in
-#            "gdm" )
-#                display_manager_gdm
-#                ;;
-#            "sddm" )
-#                display_manager_sddm
-#                ;;
-#            "lightdm" )
-#                display_manager_lightdm
-#                ;;
-#            "lxdm" )
-#                display_manager_lxdm
-#                ;;
-#        esac
-#    fi
-#}
-#
-#function display_manager_gdm() {
-#    pacman_install "gdm"
-#    arch-chroot "${MNT_DIR}" systemctl enable gdm.service
-#}
-#
-#function display_manager_sddm() {
-#    pacman_install "sddm"
-#    arch-chroot "${MNT_DIR}" systemctl enable sddm.service
-#}
-#
-#function display_manager_lightdm() {
-#    pacman_install "lightdm lightdm-gtk-greeter"
-#    arch-chroot "${MNT_DIR}" systemctl enable lightdm.service
-#    user_add_groups_lightdm
-#
-#    if [ "$DESKTOP_ENVIRONMENT" == "deepin" ]; then
-#        arch-chroot "${MNT_DIR}" sed -i 's/^#greeter-session=.*/greeter-session=lightdm-deepin-greeter/' /etc/lightdm/lightdm.conf
-#        arch-chroot "${MNT_DIR}" systemctl enable lightdm.service
-#    fi
-#}
-#
-#function display_manager_lxdm() {
-#    pacman_install "lxdm"
-#    arch-chroot "${MNT_DIR}" systemctl enable lxdm.service
-#}
+function display_manager() {
+    print_step "display_manager()"
+
+    if [ "$DISPLAY_MANAGER" == "auto" ]; then
+        case "$DESKTOP_ENVIRONMENT" in
+            "gnome" | "budgie" )
+                display_manager_gdm
+                ;;
+            "kde" )
+                display_manager_sddm
+                ;;
+            "lxde" )
+                display_manager_lxdm
+                ;;
+            "xfce" | "mate" | "cinnamon" | "i3-wm" | "i3-gaps" | "deepin" | "bspwm" | "awesome" | "qtile" | "openbox" | "leftwm" | "dusk" )
+                display_manager_lightdm
+                ;;
+        esac
+    else
+        case "$DISPLAY_MANAGER" in
+            "gdm" )
+                display_manager_gdm
+                ;;
+            "sddm" )
+                display_manager_sddm
+                ;;
+            "lightdm" )
+                display_manager_lightdm
+                ;;
+            "lxdm" )
+                display_manager_lxdm
+                ;;
+        esac
+    fi
+}
+
+function display_manager_gdm() {
+    pacman_install "gdm"
+    arch-chroot "${MNT_DIR}" systemctl enable gdm.service
+}
+
+function display_manager_sddm() {
+    pacman_install "sddm"
+    arch-chroot "${MNT_DIR}" systemctl enable sddm.service
+}
+
+function display_manager_lightdm() {
+    pacman_install "lightdm lightdm-gtk-greeter"
+    arch-chroot "${MNT_DIR}" systemctl enable lightdm.service
+    user_add_groups_lightdm
+
+    if [ "$DESKTOP_ENVIRONMENT" == "deepin" ]; then
+        arch-chroot "${MNT_DIR}" sed -i 's/^#greeter-session=.*/greeter-session=lightdm-deepin-greeter/' /etc/lightdm/lightdm.conf
+        arch-chroot "${MNT_DIR}" systemctl enable lightdm.service
+    fi
+}
+
+function display_manager_lxdm() {
+    pacman_install "lxdm"
+    arch-chroot "${MNT_DIR}" systemctl enable lxdm.service
+}
 
 function packages() {
     print_step "packages()"
