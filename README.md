@@ -1,4 +1,4 @@
-# alis - All credit to [@picodotdev](https://github.com/picodotdev/alis).
+# alis - All credit to [@picodotdev](https://github.com/picodotdev/alis)
 
 ![Arch Linux](https://raw.githubusercontent.com/JSouthGB/alis/master/images/archlinux-badge.svg)
 ![Bash](https://raw.githubusercontent.com/JSouthGB/alis/master/images/sh-bash-badge.svg)
