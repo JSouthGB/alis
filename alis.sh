@@ -74,7 +74,7 @@ function sanitize_variables() {
     BOOTLOADER=$(sanitize_variable "$BOOTLOADER")
     CUSTOM_SHELL=$(sanitize_variable "$CUSTOM_SHELL")
     DESKTOP_ENVIRONMENT=$(sanitize_variable "$DESKTOP_ENVIRONMENT")
-    DISPLAY_MANAGER=$(sanitize_variable "$DISPLAY_MANAGER")
+#    DISPLAY_MANAGER=$(sanitize_variable "$DISPLAY_MANAGER")
     SYSTEMD_UNITS=$(sanitize_variable "$SYSTEMD_UNITS")
 
     for I in "${BTRFS_SUBVOLUMES_MOUNTPOINTS[@]}"; do
@@ -207,7 +207,7 @@ function check_variables() {
     check_variables_boolean "SECURE_BOOT" "$SECURE_BOOT"
     check_variables_list "CUSTOM_SHELL" "$CUSTOM_SHELL" "bash zsh dash fish" "true" "true"
     check_variables_list "DESKTOP_ENVIRONMENT" "$DESKTOP_ENVIRONMENT" "gnome kde xfce mate cinnamon lxde i3-wm i3-gaps deepin budgie bspwm awesome qtile openbox leftwm dusk" "false" "true"
-    check_variables_list "DISPLAY_MANAGER" "$DISPLAY_MANAGER" "auto gdm sddm lightdm lxdm" "true" "true"
+#    check_variables_list "DISPLAY_MANAGER" "$DISPLAY_MANAGER" "auto gdm sddm lightdm lxdm" "true" "true"
     check_variables_boolean "PACKAGES_MULTILIB" "$PACKAGES_MULTILIB"
     check_variables_boolean "PACKAGES_INSTALL" "$PACKAGES_INSTALL"
     check_variables_boolean "PROVISION" "$PROVISION"
@@ -1638,67 +1638,67 @@ function desktop_environment_dusk() {
     aur_install "dusk-git dmenu xterm xorg-server"
 }
 
-function display_manager() {
-    print_step "display_manager()"
-
-    if [ "$DISPLAY_MANAGER" == "auto" ]; then
-        case "$DESKTOP_ENVIRONMENT" in
-            "gnome" | "budgie" )
-                display_manager_gdm
-                ;;
-            "kde" )
-                display_manager_sddm
-                ;;
-            "lxde" )
-                display_manager_lxdm
-                ;;
-            "xfce" | "mate" | "cinnamon" | "i3-wm" | "i3-gaps" | "deepin" | "bspwm" | "awesome" | "qtile" | "openbox" | "leftwm" | "dusk" )
-                display_manager_lightdm
-                ;;
-        esac
-    else
-        case "$DISPLAY_MANAGER" in
-            "gdm" )
-                display_manager_gdm
-                ;;
-            "sddm" )
-                display_manager_sddm
-                ;;
-            "lightdm" )
-                display_manager_lightdm
-                ;;
-            "lxdm" )
-                display_manager_lxdm
-                ;;
-        esac
-    fi
-}
-
-function display_manager_gdm() {
-    pacman_install "gdm"
-    arch-chroot "${MNT_DIR}" systemctl enable gdm.service
-}
-
-function display_manager_sddm() {
-    pacman_install "sddm"
-    arch-chroot "${MNT_DIR}" systemctl enable sddm.service
-}
-
-function display_manager_lightdm() {
-    pacman_install "lightdm lightdm-gtk-greeter"
-    arch-chroot "${MNT_DIR}" systemctl enable lightdm.service
-    user_add_groups_lightdm
-
-    if [ "$DESKTOP_ENVIRONMENT" == "deepin" ]; then
-        arch-chroot "${MNT_DIR}" sed -i 's/^#greeter-session=.*/greeter-session=lightdm-deepin-greeter/' /etc/lightdm/lightdm.conf
-        arch-chroot "${MNT_DIR}" systemctl enable lightdm.service
-    fi
-}
-
-function display_manager_lxdm() {
-    pacman_install "lxdm"
-    arch-chroot "${MNT_DIR}" systemctl enable lxdm.service
-}
+#function display_manager() {
+#    print_step "display_manager()"
+#
+#    if [ "$DISPLAY_MANAGER" == "auto" ]; then
+#        case "$DESKTOP_ENVIRONMENT" in
+#            "gnome" | "budgie" )
+#                display_manager_gdm
+#                ;;
+#            "kde" )
+#                display_manager_sddm
+#                ;;
+#            "lxde" )
+#                display_manager_lxdm
+#                ;;
+#            "xfce" | "mate" | "cinnamon" | "i3-wm" | "i3-gaps" | "deepin" | "bspwm" | "awesome" | "qtile" | "openbox" | "leftwm" | "dusk" )
+#                display_manager_lightdm
+#                ;;
+#        esac
+#    else
+#        case "$DISPLAY_MANAGER" in
+#            "gdm" )
+#                display_manager_gdm
+#                ;;
+#            "sddm" )
+#                display_manager_sddm
+#                ;;
+#            "lightdm" )
+#                display_manager_lightdm
+#                ;;
+#            "lxdm" )
+#                display_manager_lxdm
+#                ;;
+#        esac
+#    fi
+#}
+#
+#function display_manager_gdm() {
+#    pacman_install "gdm"
+#    arch-chroot "${MNT_DIR}" systemctl enable gdm.service
+#}
+#
+#function display_manager_sddm() {
+#    pacman_install "sddm"
+#    arch-chroot "${MNT_DIR}" systemctl enable sddm.service
+#}
+#
+#function display_manager_lightdm() {
+#    pacman_install "lightdm lightdm-gtk-greeter"
+#    arch-chroot "${MNT_DIR}" systemctl enable lightdm.service
+#    user_add_groups_lightdm
+#
+#    if [ "$DESKTOP_ENVIRONMENT" == "deepin" ]; then
+#        arch-chroot "${MNT_DIR}" sed -i 's/^#greeter-session=.*/greeter-session=lightdm-deepin-greeter/' /etc/lightdm/lightdm.conf
+#        arch-chroot "${MNT_DIR}" systemctl enable lightdm.service
+#    fi
+#}
+#
+#function display_manager_lxdm() {
+#    pacman_install "lxdm"
+#    arch-chroot "${MNT_DIR}" systemctl enable lxdm.service
+#}
 
 function packages() {
     print_step "packages()"
@@ -1889,7 +1889,7 @@ function main() {
     fi
     if [ -n "$DESKTOP_ENVIRONMENT" ]; then
         execute_step "desktop_environment"
-        execute_step "display_manager"
+#        execute_step "display_manager"
     fi
     execute_step "packages"
     if [ "$PROVISION" == "true" ]; then
