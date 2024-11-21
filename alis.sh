@@ -1579,7 +1579,7 @@ function desktop_environment_gnome() {
 }
 
 function desktop_environment_kde() {
-    pacman_install "plasma-meta kde-system-meta kde-utilities-meta kde-graphics-meta kde-multimedia-meta kde-network-meta"
+    pacman_install "plasma-meta systemsettings bluedevil breeze-gtk discover drkonqi kde-gtk-config kdeplasma-addons kgamma kinfocenter krdp kscreen ksshaskpass kwallet-pam kwrited ocean-sound-theme oxygen oxygen-sounds plasma-browser-integration plasma-desktop plasma-disks plasma-firewall plasma-nm plasma-pa plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-welcome plasma-workspace-wallpapers powerdevil print-manager xdg-desktop-portal-kde breeze-grub breeze-plymouth flatpak-kcm plasma-sdk plymouth-kcm"
 }
 
 function desktop_environment_xfce() {
